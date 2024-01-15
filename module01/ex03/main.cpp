@@ -2,7 +2,7 @@
 # include "Weapon.hpp"
 # include "HumanA.hpp"
 # include "HumanB.hpp"
-//! NON FUNZIONA IL SETTYPE
+
 int main()
 {
     {

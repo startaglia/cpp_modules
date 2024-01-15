@@ -6,7 +6,7 @@
 /*   By: startagl <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 16:49:32 by startagl          #+#    #+#             */
-/*   Updated: 2024/01/13 18:40:30 by startagl         ###   ########.fr       */
+/*   Updated: 2024/01/15 16:23:24 by startagl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 # define HUMANA
 
 # include "Weapon.hpp"
+# include <iostream>
 
 class HumanA
 {
-    std::string name;
-    Weapon weaponType;
-
+    std::string _name;
+    Weapon &_weaponType;
     public:
-        HumanA(const std::string& name, const Weapon& weaponType);
+        HumanA(std::string name, Weapon &weaponType);
         ~HumanA();
-        void attack();
+        void attack(void) const;
 };
 
 # endif

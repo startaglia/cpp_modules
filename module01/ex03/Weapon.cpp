@@ -6,7 +6,7 @@
 /*   By: startagl <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 16:50:22 by startagl          #+#    #+#             */
-/*   Updated: 2024/01/13 19:03:16 by startagl         ###   ########.fr       */
+/*   Updated: 2024/01/15 16:04:50 by startagl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,9 @@ Weapon::Weapon(){};
 Weapon::~Weapon(){};
 
 // metodo che ritorna il riferimento al tipo
-const std::string& Weapon::getType()
+const std::string& Weapon::getType() const
 {
+    // std::cout << "TYPE IN GETTYPE->" << this->type << std::endl;
     return this->type;
 }
 
@@ -31,5 +32,6 @@ const std::string& Weapon::getType()
 void Weapon::setType(const std::string& weaponType)
 {
     this->type = weaponType;
+    // std::cout<< "TYPE IN SETTYPE->" << this->type << std::endl;
 }
 
